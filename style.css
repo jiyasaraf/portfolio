@@ -1,0 +1,96 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+  color: white;
+  height: 100vh;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.highlight {
+  color: #ffc107;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #ffc107;
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+}
+
+/* Experience */
+.experience-card {
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  background: #fff;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.project-card {
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+.img-wrapper {
+  overflow: hidden;
+  height: 220px;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.project-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+.project-card .card-body {
+  background: #fff;
+  padding: 1rem;
+}
+
+/* Skills */
+.skill-card {
+  background: #ffffff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+.skill-icon {
+  font-size: 1.8rem;
+}
+.skill-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
